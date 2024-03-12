@@ -5,23 +5,23 @@ import java.util.Stack;
 
 public class Pile {
 
-  private final Stack<Integer> pila = new Stack<>();
+  private final Stack<Integer> pile = new Stack<>();
 
-  public int obtenerNumeroDatos(){
-    Scanner scanner = new Scanner(System.in);
+  public int getSize(){
+    Scanner reader = new Scanner(System.in);
     System.out.println("\nIngrese el número de datos que desea tenga la pila: ");
-    return scanner.nextInt();
+    return reader.nextInt();
   }
-  public Stack<Integer> llenarPila(int numeroDatos){
+  public Stack<Integer> fillPile(int size){
 
-    for (int i = 0; i < numeroDatos; i++) {
-      pila.push((int) (Math.random() * 50 + 1));
+    for (int i = 0; i < size; i++) {
+      pile.push((int) (Math.random() * 50 + 1));
     }
 
-    return pila;
+    return pile;
   }
 
-  public void mostrarPila(Stack<Integer> numeros) {
-    System.out.println("\nLa pila obtenida es: " + numeros);
+  public void showPile(Stack<Integer> numbers) {
+    System.out.println("\nLa pila obtenida es: " + numbers);
   }
 }
