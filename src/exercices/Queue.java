@@ -1,4 +1,4 @@
-package exercices.queue;
+package exercices;
 
 import java.util.*;
 

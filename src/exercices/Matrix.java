@@ -1,4 +1,4 @@
-package exercices.matriz;
+package exercices;
 
 import java.util.Scanner;
 

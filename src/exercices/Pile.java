@@ -1,4 +1,4 @@
-package exercices.pile;
+package exercices;
 
 import java.util.Scanner;
 import java.util.Stack;
