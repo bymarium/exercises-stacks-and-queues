@@ -9,7 +9,7 @@ public class Pile {
 
   public int obtenerNumeroDatos(){
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Ingrese el número de datos que desea tenga la pila: ");
+    System.out.println("\nIngrese el número de datos que desea tenga la pila: ");
     return scanner.nextInt();
   }
   public Stack<Integer> llenarPila(int numeroDatos){
@@ -22,8 +22,6 @@ public class Pile {
   }
 
   public void mostrarPila(Stack<Integer> numeros) {
-    System.out.println("La pila obtenida es: " + numeros);
+    System.out.println("\nLa pila obtenida es: " + numeros);
   }
-
-
 }

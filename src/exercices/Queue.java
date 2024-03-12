@@ -7,7 +7,7 @@ public class Queue {
 
   public int getSize() {
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Ingrese la dimesion de la cola: ");
+    System.out.println("\nIngrese la dimesion de la cola: ");
     return scanner.nextInt();
   }
 
@@ -18,7 +18,7 @@ public class Queue {
     return cola;
   }
 
-  public void showQueue(java.util.Queue<Integer> numbers) {
-    System.out.println("La cola obtenida es: " + numbers);
+  public void showQueue(Queue numbers) {
+    System.out.println("\nLa cola obtenida es: " + numbers);
   }
 }
