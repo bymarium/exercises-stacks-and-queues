@@ -1,9 +1,11 @@
 package exercices;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
 
-public class Queue {
-  private final java.util.Queue<Integer> cola = new LinkedList<>();
+public class Queuee {
+  private final Queue<Integer> cola = new LinkedList<>();
 
   public int getSize() {
     Scanner scanner = new Scanner(System.in);
@@ -11,14 +13,14 @@ public class Queue {
     return scanner.nextInt();
   }
 
-  public java.util.Queue<Integer> createQueue(int size){
+  public Queue<Integer> createQueue(int size){
     for (int i = 0; i < size; i++) {
       cola.offer((int)(Math.random() * 50 + 1));
     }
     return cola;
   }
 
-  public void showQueue(java.util.Queue<Integer> numbers) {
+  public void showQueue(Queue<Integer> numbers) {
     System.out.println("La cola obtenida es: " + numbers);
   }
 }
