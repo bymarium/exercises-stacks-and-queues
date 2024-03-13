@@ -5,13 +5,17 @@ import java.util.Scanner;
 public class Matrix {
   private final Scanner reader = new Scanner(System.in);
 
-  public int getSize() {
-    System.out.println("\nIngrese la dimensión de la matriz cuadrada: ");
+  public int getRows() {
+    System.out.println("\nIngrese la cantidad de filas de la matriz: ");
+    return reader.nextInt();
+  }
+  public int getColumns() {
+    System.out.println("\nIngrese la cantidad de columnas de la matriz: ");
     return reader.nextInt();
   }
 
-  public int[][] fillMatrix(int size) {
-    int[][] numbers = new int[size][size];
+  public int[][] fillMatrix(int rows, int columns) {
+    int[][] numbers = new int[rows][columns];
 
     for (int i = 0; i < numbers.length; i++) {
       for (int j = 0; j < numbers[i].length; j++) {
