@@ -15,7 +15,7 @@ public class Pile {
   public Stack<Integer> fillPile(int size){
 
     for (int i = 0; i < size; i++) {
-      pile.push((int) (Math.random() * 50 + 1));
+      pile.push((int) (Math.random() * 200 - 20));
     }
 
     return pile;
