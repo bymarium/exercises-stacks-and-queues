@@ -24,6 +24,4 @@ public class Pile {
   public void showPile(Stack<Integer> numbers) {
     System.out.println("La pila obtenida es: " + numbers);
   }
-
-
 }
