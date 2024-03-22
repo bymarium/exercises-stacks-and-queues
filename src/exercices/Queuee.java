@@ -5,8 +5,6 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class Queuee {
-  private final Queue<Integer> cola = new LinkedList<>();
-
   public int getSize() {
     Scanner scanner = new Scanner(System.in);
     System.out.println("Ingrese la dimesion de la cola: ");
@@ -14,6 +12,7 @@ public class Queuee {
   }
 
   public Queue<Integer> createQueue(int size){
+    Queue<Integer> cola = new LinkedList<>();
     for (int i = 0; i < size; i++) {
       cola.offer((int)(Math.random() * 50 + 1));
     }
